@@ -667,6 +667,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelInGame
       objectReference: {fileID: 0}
+    - target: {fileID: 2830719036120162777, guid: 4f1a47e1b80495549bc25605854cdc1e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f1a47e1b80495549bc25605854cdc1e, type: 3}
 --- !u!1001 &1436929601
@@ -764,6 +768,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelFinish
       objectReference: {fileID: 0}
+    - target: {fileID: 2523553292010643997, guid: 98ce76958af0ee143a8a40d20d361715, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98ce76958af0ee143a8a40d20d361715, type: 3}
 --- !u!1001 &1444956488
@@ -776,6 +784,10 @@ PrefabInstance:
     - target: {fileID: 877483783512908747, guid: ea7b7fef20e217b40910b076a2783fb6, type: 3}
       propertyPath: m_Name
       value: LevelFall
+      objectReference: {fileID: 0}
+    - target: {fileID: 877483783512908747, guid: ea7b7fef20e217b40910b076a2783fb6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 877483783512908751, guid: ea7b7fef20e217b40910b076a2783fb6, type: 3}
       propertyPath: m_LocalPosition.x

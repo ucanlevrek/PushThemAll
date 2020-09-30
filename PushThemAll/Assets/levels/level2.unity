@@ -803,6 +803,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelInGame
       objectReference: {fileID: 0}
+    - target: {fileID: 2830719036120162777, guid: 4f1a47e1b80495549bc25605854cdc1e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f1a47e1b80495549bc25605854cdc1e, type: 3}
 --- !u!1001 &1514802742
