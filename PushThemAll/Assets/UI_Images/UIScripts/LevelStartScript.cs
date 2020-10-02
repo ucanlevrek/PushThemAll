@@ -230,6 +230,7 @@ public class LevelStartScript : MonoBehaviour
 
     public void SettingButton()
     {
+        Debug.Log("geldi");
         open = !open;
         if (open)
         {
