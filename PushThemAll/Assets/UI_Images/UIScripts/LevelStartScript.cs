@@ -186,10 +186,9 @@ public class LevelStartScript : MonoBehaviour
         vibrateOff.SetActive(false);
         joystickOn.SetActive(false);
         joystickOff.SetActive(false);
+
         totalCoin.text = PlayerPrefs.GetInt("TotalCoin").ToString();
         PlayerPrefs.SetInt("TotalCoin", 160);
-
-
     }
 
     // Update is called once per frame
@@ -225,6 +224,7 @@ public class LevelStartScript : MonoBehaviour
             offline.SetActive(false);
             offlineYellow.SetActive(true);
         }
+
         totalCoin.text = PlayerPrefs.GetInt("TotalCoin").ToString();
     }
 
