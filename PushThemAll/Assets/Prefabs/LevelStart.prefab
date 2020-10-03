@@ -309,7 +309,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 484015578}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelStartScript, Assembly-CSharp
         m_MethodName: SoundOff
         m_Mode: 1
@@ -673,7 +673,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 484015578}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelStartScript, Assembly-CSharp
         m_MethodName: SoundOn
         m_Mode: 1
@@ -963,7 +963,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 484015578}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelStartScript, Assembly-CSharp
         m_MethodName: PowerYellow
         m_Mode: 1
@@ -1094,7 +1094,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 484015578}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelStartScript, Assembly-CSharp
         m_MethodName: VibrateOff
         m_Mode: 1
@@ -1225,7 +1225,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 484015578}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelStartScript, Assembly-CSharp
         m_MethodName: VibrateOn
         m_Mode: 1
@@ -1515,7 +1515,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 484015578}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelStartScript, Assembly-CSharp
         m_MethodName: OfflineYellow
         m_Mode: 1
@@ -1646,7 +1646,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 484015578}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelStartScript, Assembly-CSharp
         m_MethodName: JoystickOn
         m_Mode: 1
@@ -1779,7 +1779,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 484015578}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelStartScript, Assembly-CSharp
         m_MethodName: WeaponYellow
         m_Mode: 1
@@ -2008,7 +2008,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 484015578}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelStartScript, Assembly-CSharp
         m_MethodName: JoystickOff
         m_Mode: 1
@@ -2111,7 +2111,6 @@ GameObject:
   - component: {fileID: 458660676470148014}
   - component: {fileID: 458660676470148015}
   - component: {fileID: 458660676470148048}
-  - component: {fileID: 484015578}
   m_Layer: 5
   m_Name: LevelStart
   m_TagString: Untagged
@@ -2223,38 +2222,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &484015578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 458660676470148049}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65f98470efb29c54c96f128c8badea41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soundOn: {fileID: 808434329}
-  soundOff: {fileID: 519783444}
-  vibrateOn: {fileID: 1172073141}
-  vibrateOff: {fileID: 1140667231}
-  joystickOn: {fileID: 1355210654}
-  joystickOff: {fileID: 2047084909}
-  weapon: {fileID: 458660676966085789}
-  weaponLevel: {fileID: 897373006}
-  weaponCost: {fileID: 863263191}
-  power: {fileID: 458660678144373097}
-  powerLevel: {fileID: 1260809063}
-  powerCost: {fileID: 587114451}
-  offline: {fileID: 458660678318004281}
-  offlineLevel: {fileID: 554759243}
-  offlineEarn: {fileID: 1181863358}
-  offlineCost: {fileID: 1830951915}
-  weaponYellow: {fileID: 1414807409}
-  powerYellow: {fileID: 1001071519}
-  offlineYellow: {fileID: 1262644835}
-  totalCoin: {fileID: 458660676448767563}
 --- !u!1 &458660676661710652
 GameObject:
   m_ObjectHideFlags: 0
@@ -3072,7 +3039,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 484015578}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelStartScript, Assembly-CSharp
         m_MethodName: SettingButton
         m_Mode: 1

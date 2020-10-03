@@ -382,7 +382,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 265010569}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelInGameScript, Assembly-CSharp
         m_MethodName: HomeButton
         m_Mode: 1
@@ -406,7 +406,6 @@ GameObject:
   - component: {fileID: 2830719036120162772}
   - component: {fileID: 2830719036120162779}
   - component: {fileID: 2830719036120162778}
-  - component: {fileID: 265010569}
   m_Layer: 5
   m_Name: LevelInGame
   m_TagString: Untagged
@@ -499,19 +498,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &265010569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2830719036120162777}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5525b7ead07b254e871cd1c87386551, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  backToMenu: {fileID: 0}
 --- !u!1 &2830719036223479297
 GameObject:
   m_ObjectHideFlags: 0

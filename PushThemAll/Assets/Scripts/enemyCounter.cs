@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,7 +12,7 @@ public class enemyCounter : MonoBehaviour
     public float numberofcurrent;
     public float numberofdeaths;
 
-    public float percentage;
+    public int percentage;
 
     void Start()
     {
@@ -25,6 +26,6 @@ public class enemyCounter : MonoBehaviour
         numberofcurrent = currentenemies.Length;
 
         //Şimdilik biraz farklı çalışıyor ama oyun bitince BottomColliderın bir parçasını ayırsak yeterli
-        percentage = (numberoftotal-numberofdeaths) / numberoftotal * 100;
+        percentage = Convert.ToInt32((numberoftotal-numberofdeaths) / numberoftotal) * 100;
     }
 }

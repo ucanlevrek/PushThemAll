@@ -6,9 +6,9 @@ public class Collactables : MonoBehaviour
 {
     //istediğin variable'a erişmen için her şeyi managerlara atan bir kod
 
-    public int CurrentCoin=0;
+    public int CurrentCoin=10;
 
-    public int Score = 0;
+    public int Score = 200;
 
     public int TotalCoin = 0;
 
