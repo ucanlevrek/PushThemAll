@@ -118,8 +118,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.091483, y: 0.049285173, z: 1.4863062}
-  m_Center: {x: 0.0457415, y: -0.05576217, z: -0.12788534}
+  m_Size: {x: 1.091483, y: 0.11301875, z: 1.5248837}
+  m_Center: {x: 0.0457415, y: -0.09015715, z: -0.14717412}
 --- !u!1 &4714151400470996762
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,8 +264,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.091483, y: 0.049285173, z: 1.4863062}
-  m_Center: {x: 0.0457415, y: -0.05576217, z: -0.12788534}
+  m_Size: {x: 1.091483, y: 0.09459472, z: 1.5248837}
+  m_Center: {x: 0.0457415, y: -0.09936917, z: -0.14717412}
 --- !u!1 &7516015530774000590
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,8 +311,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7516015531093580969}
   - component: {fileID: 7516015531093580970}
+  - component: {fileID: 810238911}
+  - component: {fileID: 810238913}
   m_Layer: 0
-  m_Name: EnemyManager
+  m_Name: LevelManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -346,7 +348,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberoftotal: 0
   numberofcurrent: 0
+  numberofdeaths: 0
   percentage: 0
+--- !u!114 &810238911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7516015531093580968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb8024c9d2db94458b63362116ad483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentCoin: 0
+  Score: 0
+  TotalCoin: 0
+--- !u!114 &810238913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7516015531093580968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c041d93d9c6ead47bc5af1fca3100a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isItDead: 0
+  isItFinished: 0
 --- !u!1 &7819641923863635366
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,6 +422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b0d3f5deabacc5429cce6b9ca8e4a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CointCanvas: {fileID: 0}
 --- !u!1 &8589390653717832014
 GameObject:
   m_ObjectHideFlags: 0

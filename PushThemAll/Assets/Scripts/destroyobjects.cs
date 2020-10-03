@@ -6,28 +6,25 @@ public class destroyobjects : MonoBehaviour
 {
     public bool isitdone = false;
 
-    // Start is called before the first frame update
     void Start()
     {
         isitdone = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    //üstüne düşeni öldürüyor eğer enemy ise numberofdeathi 1 artırıyor
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Enemy")
         {
+            GameObject.Find("Managers/LevelManager").GetComponent<enemyCounter>().numberofdeaths++;
+
             Destroy(other.gameObject);
         }
 
         if(other.gameObject.tag == "Player")
         {
-            isitdone = true;
+            GameObject.Find("Managers/LevelManager").GetComponent<isIt>().isItDead = true;
+
             Destroy(other.gameObject);
         }
     }

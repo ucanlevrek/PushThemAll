@@ -15,6 +15,7 @@ public class image : MonoBehaviour
     {
         
     }
+
     public void Act()
     {
         gameObject.SetActive(false);

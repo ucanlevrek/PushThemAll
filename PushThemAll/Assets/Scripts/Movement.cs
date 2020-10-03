@@ -4,113 +4,37 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public GameObject handle;
     private Rigidbody rb;
 
-    public float mvspeed;
-    public float constantSpeed1, constantSpeed2, constantSpeed3;
-    private float constantSpeed;
+    public Joystick joystick;
 
+    public float turningSpeed;
+    public float constantSpeed;
 
-    // Start is called before the first frame update
+    float horizontalMove = 0f;
+    float verticalMove = 0f;
+
+    Vector3 direction=new Vector3(0,180,0);
+
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (handle.transform.localPosition.x > 0)
+
+        horizontalMove = joystick.Horizontal * constantSpeed;
+
+        verticalMove = joystick.Vertical * constantSpeed;
+
+        direction = new Vector3(joystick.Horizontal, 0, joystick.Vertical).normalized;
+
+        if (Input.GetMouseButton(0) && (joystick.Horizontal!=0 || joystick.Vertical!=0) )
         {
-            if (handle.transform.localPosition.magnitude < 32)
-            {
-                constantSpeed = constantSpeed1;
-            }
-            else if (handle.transform.localPosition.magnitude < 64)
-            {
-                constantSpeed = constantSpeed2;
-            }
-            else
-            {
-                constantSpeed = constantSpeed3;
-            }
-
-            rb.AddForce(new Vector3(-mvspeed, 0, 0) * Time.deltaTime);
-
-            if (rb.velocity.magnitude > constantSpeed)
-            {
-                rb.velocity = constantSpeed * (rb.velocity.normalized);
-            }
+            transform.LookAt(-direction * 360);
         }
 
-        if (handle.transform.localPosition.x < 0)
-        {
-            if (handle.transform.localPosition.magnitude < 32)
-            {
-                constantSpeed = constantSpeed1;
-            }
-            else if (handle.transform.localPosition.magnitude < 64)
-            {
-                constantSpeed = constantSpeed2;
-            }
-            else
-            {
-                constantSpeed = constantSpeed3;
-            }
-
-            rb.AddForce(new Vector3(mvspeed, 0, 0) * Time.deltaTime);
-
-            if (rb.velocity.magnitude > constantSpeed)
-            {
-                rb.velocity = constantSpeed * (rb.velocity.normalized);
-            }
-        }
-
-        if (handle.transform.localPosition.y > 0)
-        {
-            if (handle.transform.localPosition.magnitude < 32)
-            {
-                constantSpeed = constantSpeed1;
-            }
-            else if (handle.transform.localPosition.magnitude < 64)
-            {
-                constantSpeed = constantSpeed2;
-            }
-            else
-            {
-                constantSpeed = constantSpeed3;
-            }
-
-            rb.AddForce(new Vector3(0, 0, -mvspeed) * Time.deltaTime);
-
-            if (rb.velocity.magnitude > constantSpeed)
-            {
-                rb.velocity = constantSpeed * (rb.velocity.normalized);
-            }
-        }
-
-        if (handle.transform.localPosition.y < 0)
-        {
-            if (handle.transform.localPosition.magnitude < 32)
-            {
-                constantSpeed = constantSpeed1;
-            }
-            else if (handle.transform.localPosition.magnitude < 64)
-            {
-                constantSpeed = constantSpeed2;
-            }
-            else
-            {
-                constantSpeed = constantSpeed3;
-            }
-
-            rb.AddForce(new Vector3(0, 0, mvspeed) * Time.deltaTime);
-
-            if (rb.velocity.magnitude > constantSpeed)
-            {
-                rb.velocity = constantSpeed * (rb.velocity.normalized);
-            }
-        }
+        rb.AddForce(new Vector3(-horizontalMove, 0, -verticalMove));
     }
 }

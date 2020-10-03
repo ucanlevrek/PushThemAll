@@ -20,7 +20,6 @@ public class CamMovement_basicscript : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void LateUpdate()
     {
         if (player != null)

@@ -9,22 +9,22 @@ public class enemyCounter : MonoBehaviour
 
     public float numberoftotal;
     public float numberofcurrent;
+    public float numberofdeaths;
 
     public float percentage;
 
-    // Start is called before the first frame update
     void Start()
     {
         totalenemies = GameObject.FindGameObjectsWithTag("Enemy");
         numberoftotal = totalenemies.Length;
     }
 
-    // Update is called once per frame
     void Update()
     {
         currentenemies = GameObject.FindGameObjectsWithTag("Enemy");
         numberofcurrent = currentenemies.Length;
 
-        percentage = numberofcurrent / numberoftotal * 100;
+        //Şimdilik biraz farklı çalışıyor ama oyun bitince BottomColliderın bir parçasını ayırsak yeterli
+        percentage = (numberoftotal-numberofdeaths) / numberoftotal * 100;
     }
 }

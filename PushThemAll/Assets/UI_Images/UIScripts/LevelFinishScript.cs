@@ -28,13 +28,6 @@ public class LevelFinishScript : MonoBehaviour
     private int b = 0;
     private int c = 0;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         

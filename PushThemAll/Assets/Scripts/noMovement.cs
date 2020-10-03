@@ -8,15 +8,15 @@ public class noMovement : MonoBehaviour
 
     public bool isFinished=false;
     public bool isitdone = false;
-    // Start is called before the first frame update
+
     void Start()
     {
         holdy = transform.position.y;
     }
 
-    // Update is called once per frame
     void Update()
     {
+        //Düşünce dursun diye
         if(transform.position.y < (holdy - 0.2f))
         {
             gameObject.GetComponent<Movement>().enabled = false;
@@ -27,9 +27,12 @@ public class noMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        //Oyun bitti mi
         if(other.gameObject.tag == "FinalCollider")
         {
-            isFinished = true;
+            gameObject.GetComponent<Movement>().enabled = false;
+
+            GameObject.Find("Managers/LevelManager").GetComponent<isIt>().isItFinished = true;
         }
     }
 }
